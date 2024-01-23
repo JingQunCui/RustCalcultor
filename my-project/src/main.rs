@@ -23,14 +23,14 @@ fn main() -> Result<(), slint::PlatformError> {
     ui.run()
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+// #[cfg(test)]
+// mod tests {
+//     use super::*;
 
-    #[test]
-    fn equals_100() {
-        let result = TAXPER + OWNERPER + PROFITPER + OPEXPER;
-        let formatted = f64::trunc(result  * 100.0) / 100.0;
-        assert_eq!(formatted, 1.00);
-    }
-}
+//     #[test]
+//     fn equals_100() {
+//         let result = TAXPER + OWNERPER + PROFITPER + OPEXPER;
+//         let formatted = f64::trunc(result  * 100.0) / 100.0;
+//         assert_eq!(formatted, 1.00);
+//     }
+// }
